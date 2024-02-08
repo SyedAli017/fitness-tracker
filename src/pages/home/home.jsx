@@ -1,7 +1,10 @@
+import Hero from "@components/Hero/Hero";
+import styles from "@pages/home/home.module.scss";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className={styles.home}>
+      <Hero />
     </div>
   );
 };

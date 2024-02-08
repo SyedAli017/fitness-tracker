@@ -40,5 +40,53 @@
         height: 30px;
       }
     }
+
+    .navbarRight {
+      display: flex;
+      gap: 30px;
+
+      .loginBtn {
+        width: 120px;
+        height: 40px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        font-family: $primary-font;
+        font-size: $font-size-3;
+        font-weight: $bold-weight;
+        line-height: normal;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $black;
+          color: $primary-color;
+          box-shadow: 0 0 15px 0 $primary-color;
+        }
+      }
+
+      .signupBtn {
+        width: 120px;
+        height: 40px;
+        background-color: $black;
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        font-family: $primary-font;
+        font-size: $font-size-3;
+        font-weight: $bold-weight;
+        line-height: normal;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        outline: 2px solid $primary-color;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $white;
+          box-shadow: 0 0 15px 0 $primary-color;
+        }
+      }
+    }
   }
 }

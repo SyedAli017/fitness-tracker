@@ -16,7 +16,14 @@ const Navbar = () => {
           </Link>
           <NavMenu />
         </div>
-        <div className={styles.navbarRight}>User</div>
+        <div className={styles.navbarRight}>
+          <Link className={styles.navbarLink} to="/login">
+            <button className={styles.loginBtn}>Login</button>
+          </Link>
+          <Link className={styles.navbarLink} to="/signup">
+            <button className={styles.signupBtn}>Signup</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
