@@ -1,0 +1,123 @@
+@import "@styles/_variables.scss";
+
+.footer {
+  background-color: rgba($primary-color, 0.1);
+  padding: 50px 20px;
+
+  .footerContainer {
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .footerTop {
+      display: flex;
+      justify-content: space-between;
+
+      .topLeft {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 300px;
+        text-align: justify;
+
+        .appLogoContainer {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        .appLogo {
+          width: 20px;
+          height: 20px;
+        }
+
+        .appName {
+          color: $black;
+          font-family: $secondary-font;
+          font-size: $font-size-4;
+          font-weight: $bold-weight;
+          line-height: normal;
+
+          .secondWord {
+            color: $primary-color;
+          }
+        }
+
+        .appDescription {
+          color: $black;
+          font-family: $primary-font;
+          font-size: $font-size-2;
+          font-weight: $normal-weight;
+          line-height: normal;
+        }
+      }
+
+      .topCenter {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .linkTitle {
+          color: $black;
+          font-family: $primary-font;
+          font-size: $font-size-4;
+          font-weight: $bold-weight;
+          line-height: normal;
+        }
+
+        .footerLinks {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .list {
+            transition: all 0.2s ease-in-out;
+            .link {
+              color: $black;
+              font-family: $primary-font;
+              font-size: $font-size-2;
+              font-weight: $normal-weight;
+              line-height: normal;
+
+              &:hover {
+                border-bottom: solid 1px $primary-color;
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footerBottom {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+
+      .copyright {
+        color: $black;
+        font-family: $primary-font;
+        font-size: $font-size-2;
+        font-weight: $normal-weight;
+        line-height: normal;
+      }
+
+      .socialIcons {
+        display: flex;
+        gap: 30px;
+
+        .socialIcon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .divider {
+      width: 100%;
+      height: 0.5px;
+      background-color: $primary-color;
+    }
+  }
+}

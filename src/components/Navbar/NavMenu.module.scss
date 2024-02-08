@@ -1,0 +1,26 @@
+@import "@styles/_variables.scss";
+
+.menu {
+  display: flex;
+  gap: 40px;
+
+  .list {
+    transition: all 0.1s ease-in-out;
+    .link {
+      color: $black;
+      font-family: $primary-font;
+      font-size: $font-size-4;
+      font-weight: $medium-weight;
+      line-height: 100%;
+      padding-bottom: 5px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: $primary-color;
+        border-bottom: 1px solid $primary-color;
+      }
+    }
+    &:hover {
+      transform: scale(1.075);
+    }
+  }
+}
