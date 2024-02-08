@@ -3,9 +3,13 @@
 .menu {
   display: flex;
   gap: 40px;
+  position: relative;
 
   .list {
-    transition: all 0.1s ease-in-out;
+    transform: translateY(-100px);
+    transition: all 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
     .link {
       color: $white;
       font-family: $primary-font;
