@@ -7,18 +7,16 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.navbarContainer}>
-        <Link to="/">
-          <div className={styles.navbarLeft}>
+        <div className={styles.navbarLeft}>
+          <Link className={styles.appLogoContainer} to="/">
             <img src={appLogo} className={styles.appLogo} alt="logo" />
             <h1 className={styles.appName}>
               Fit<span className={styles.secondWord}>Trax</span>
             </h1>
-          </div>
-        </Link>
-        <div className={styles.navbarCenter}>
+          </Link>
           <NavMenu />
         </div>
-        <div className={styles.navbarRight}></div>
+        <div className={styles.navbarRight}>User</div>
       </div>
     </div>
   );
