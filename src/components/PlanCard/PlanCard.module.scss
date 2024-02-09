@@ -1,0 +1,67 @@
+@import "@styles/_variables.scss";
+
+.planCard {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 1000px;
+  cursor: pointer;
+
+  .plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    outline: rgba($primary-color, 0.5) 2px solid;
+    border-radius: 10px;
+
+    .planContent {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .title {
+        color: $white;
+        font-family: $primary-font;
+        font-size: $font-size-7;
+        font-weight: $bold-weight;
+        line-height: normal;
+      }
+
+      .exercises {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .exercise {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .exerciseName {
+            color: $white;
+            font-family: $primary-font;
+            font-size: $font-size-4;
+            font-weight: $bold-weight;
+            line-height: normal;
+          }
+
+          .exerciseType {
+            color: $white;
+            font-family: $primary-font;
+            font-size: $font-size-2;
+            font-weight: $normal-weight;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .imageContainer {
+      .planImage {
+        outline: solid blue 2px;
+        width: 300px;
+      }
+    }
+  }
+}
