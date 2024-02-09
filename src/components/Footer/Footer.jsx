@@ -49,7 +49,7 @@ const Footer = () => {
         <div className={styles.footerBottom}>
           <div className={styles.bottomLeft}>
             <p className={styles.copyright}>
-              &copy; 2024 RecipeApp. All rights reserved.
+              &copy; 2024 FitTrax. All rights reserved.
             </p>
           </div>
           <div className={styles.bottomRight}>

@@ -3,20 +3,23 @@
 .menu {
   display: flex;
   gap: 40px;
+  position: relative;
 
   .list {
-    transition: all 0.1s ease-in-out;
+    transform: translateY(-100px);
+    transition: all 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
     .link {
-      color: $black;
+      color: $white;
       font-family: $primary-font;
-      font-size: $font-size-4;
+      font-size: $font-size-3;
       font-weight: $medium-weight;
-      line-height: 100%;
-      padding-bottom: 5px;
+      line-height: 150%;
       transition: all 0.2s ease-in-out;
       &:hover {
         color: $primary-color;
-        border-bottom: 1px solid $primary-color;
+        text-decoration: underline;
       }
     }
     &:hover {

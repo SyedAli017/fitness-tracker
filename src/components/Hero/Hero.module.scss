@@ -1,0 +1,71 @@
+@import "@styles/_variables.scss";
+
+.hero {
+  .heroContent {
+    width: $max-width-content;
+    margin: 0 auto;
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .heroLeft {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      text-align: justify;
+
+      .title {
+        color: $white;
+        font-family: $primary-font;
+        font-size: $font-size-9;
+        font-weight: $bold-weight;
+        line-height: normal;
+
+        .secondWord {
+          color: $primary-color;
+        }
+      }
+
+      .description {
+        color: $white;
+        font-family: $primary-font;
+        font-size: $font-size-3;
+        font-weight: $normal-weight;
+        line-height: 175%;
+
+        .secondWord {
+          color: $primary-color;
+        }
+      }
+
+      .CTABtn {
+        width: 180px;
+        height: 40px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        font-family: $primary-font;
+        font-size: $font-size-3;
+        font-weight: $bold-weight;
+        line-height: normal;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $black;
+          color: $primary-color;
+          box-shadow: 0 0 15px 0 $primary-color;
+        }
+      }
+    }
+
+    .heroRight {
+      .heroImg {
+        width: 350px;
+      }
+    }
+  }
+}
