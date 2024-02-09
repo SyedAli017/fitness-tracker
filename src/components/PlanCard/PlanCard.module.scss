@@ -1,0 +1,115 @@
+@import "@styles/_variables.scss";
+
+.planCard {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  cursor: pointer;
+
+  .plan {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    border-bottom: rgba($primary-color, 0.5) 2px solid;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      outline: rgba($primary-color, 1) 2px solid;
+      border: none;
+    }
+
+    .planContent {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .title {
+        color: $white;
+        font-family: $primary-font;
+        font-size: $font-size-7;
+        font-weight: $bold-weight;
+        line-height: normal;
+      }
+
+      .exercises {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .exercise {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .exerciseName {
+            color: $white;
+            font-family: $primary-font;
+            font-size: $font-size-4;
+            font-weight: $bold-weight;
+            line-height: normal;
+          }
+
+          .exerciseType {
+            color: $white;
+            font-family: $primary-font;
+            font-size: $font-size-2;
+            font-weight: $normal-weight;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .imageContainer {
+      .planImage {
+        height: 300px;
+      }
+    }
+
+    .planSelector {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba($primary-color, 0.7);
+      display: none;
+      align-items: center;
+      justify-content: center;
+
+      .view {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: $white;
+        color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-family: $primary-font;
+        font-size: $font-size-4;
+        font-weight: $bold-weight;
+        line-height: normal;
+      }
+    }
+
+    &:hover .planSelector {
+      display: flex;
+      animation: slideFromTop 0.7s ease-in-out;
+    }
+
+    @keyframes slideFromTop {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+}
