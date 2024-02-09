@@ -64,7 +64,8 @@
 
     .heroRight {
       .heroImg {
-        width: 350px;
+        height: 400px;
+        filter: grayscale(10%);
       }
     }
   }

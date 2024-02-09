@@ -1,8 +1,16 @@
-import styles from "@components/PlanCard/PlanCard.module.scss";
+import {  useNavigate } from "react-router-dom";
 import plans from "@data/plans";
-import { Link } from "react-router-dom";
+import styles from "@components/PlanCard/PlanCard.module.scss";
 
 const PlanCard = () => {
+  const navigate = useNavigate();
+
+  const handlePlanClick = (slug) => {
+    navigate(`/plan/${slug}`);
+  };
+
+  console.log(plans.slug);
+
   return (
     <div className={styles.planCard}>
       {plans.map((plan) => (
@@ -27,9 +35,12 @@ const PlanCard = () => {
               alt={plan.title}
             />
           </div>
-          <Link to="/plan" className={styles.planSelector}>
-              <p className={styles.view}>View</p>
-          </Link>
+          <div
+            className={styles.planSelector}
+            onClick={() => handlePlanClick(plan.slug)}
+          >
+            <p className={styles.view}>View</p>
+          </div>
         </div>
       ))}
     </div>

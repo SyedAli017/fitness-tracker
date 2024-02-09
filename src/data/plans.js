@@ -7,6 +7,7 @@ import danceImg from "@assets/PlanCard/dance.png";
 const plans = [
   {
     title: "Beginner's Cardio Plan",
+    slug: "beginners-cardio-plan",
     exercises: [
       {
         exercise: "Walking",
@@ -24,6 +25,7 @@ const plans = [
   },
   {
     title: "Intermediate Full-Body workout",
+    slug: "intermediate-full-body-workout",
     exercises: [
       {
         exercise: "Strength Training",
@@ -42,6 +44,7 @@ const plans = [
 
   {
     title: "Advanced Cross-Training Plan",
+    slug: "advanced-cross-training-plan",
     exercises: [
       {
         exercise: "Cycling",
@@ -63,6 +66,7 @@ const plans = [
   },
   {
     title: "Yoga and Pilates Fusion",
+    slug: "yoga-and-pilates-fusion",
     exercises: [
       { exercise: "Yoga", type: "Vinyasa Yoga", duration_minutes: 20 },
       { exercise: "Pilates", type: "Reformer Pilates", duration_minutes: 20 },
@@ -73,6 +77,7 @@ const plans = [
 
   {
     title: "Dance Fitness Routine",
+    slug: "dance-fitness-routine",
     exercises: [
       { exercise: "Dancing", type: "Ballet", duration_minutes: 30 },
       { exercise: "Dancing", type: "Hip Hop", duration_minutes: 20 },
