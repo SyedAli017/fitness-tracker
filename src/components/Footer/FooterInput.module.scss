@@ -15,7 +15,7 @@
     line-height: normal;
     align-self: center;
   }
-  
+
   .footerInputContainer {
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@
       font-family: $primary-font;
       font-size: $font-size-2;
       font-weight: $normal-weight;
-      line-height: normal;
+      line-height: 200%;
     }
 
     .button {
@@ -52,4 +52,22 @@
   font-size: $font-size-2;
   font-weight: $normal-weight;
   line-height: normal;
+}
+
+@media screen and (max-width: $tablet-md) {
+  .footerInput {
+    .title {
+      font-size: $font-size-2;
+    }
+
+    .footerInputContainer {
+      .description {
+        font-size: $font-size-1;
+      }
+
+      .button {
+        font-size: $font-size-1;
+      }
+    }
+  }
 }

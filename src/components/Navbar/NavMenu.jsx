@@ -22,7 +22,29 @@ const NavMenu = () => {
       });
     }
 
-    slideInLinks();
+    function slideFromRight() {
+      const listItemsArray = Array.from(listItems);
+      const windowWidth = window.innerWidth;
+      const startPosition = windowWidth;
+
+      listItemsArray.forEach((item, index) => {
+        item.style.transform = `translateX(${startPosition}px)`;
+        setTimeout(() => {
+          let pos = startPosition;
+          const id = setInterval(() => {
+            if (pos <= 0) clearInterval(id);
+            item.style.transform = `translateX(${pos}px)`;
+            pos -= 10;
+          }, 10);
+        }, index * 200);
+      });
+    }
+
+    if (window.innerWidth > 768) {
+      slideInLinks();
+    } else {
+      slideFromRight();
+    }
   }, []);
 
   return (

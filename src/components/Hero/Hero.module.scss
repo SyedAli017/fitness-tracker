@@ -2,9 +2,9 @@
 
 .hero {
   .heroContent {
-    width: $max-width-content;
+    max-width: $max-width-content;
     margin: 0 auto;
-    height: 650px;
+    min-height: 650px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,26 +14,26 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
-      text-align: justify;
-
+      
       .title {
         color: $white;
         font-family: $primary-font;
         font-size: $font-size-9;
         font-weight: $bold-weight;
         line-height: normal;
-
+        
         .secondWord {
           color: $primary-color;
         }
       }
-
+      
       .description {
         color: $white;
         font-family: $primary-font;
         font-size: $font-size-3;
         font-weight: $normal-weight;
         line-height: 175%;
+        text-align: justify;
 
         .secondWord {
           color: $primary-color;
@@ -64,9 +64,76 @@
 
     .heroRight {
       .heroImg {
-        height: 400px;
+        width: 525px;
         border-radius: 30px;
       }
     }
   }
+}
+
+@media screen and (max-width: $tablet) {
+  .hero {
+    .heroContent {
+      .heroLeft {
+        max-width: 300px;
+
+        .title {
+          font-size: $font-size-8;
+        }
+
+        .description {
+          font-size: $font-size-2;
+        }
+
+        .CTABtn {
+          width: 170px;
+        }
+      }
+
+      .heroRight {
+        .heroImg {
+          width: 450px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-md) {
+  .hero {
+    .heroContent {
+      flex-direction: column;
+      gap: 30px;
+      padding: 50px 20px;
+  
+      .heroLeft {
+        max-width: 250px;
+  
+        .title {
+          font-size: $font-size-6;
+  
+          .secondWord {
+            color: $primary-color;
+          }
+        }
+  
+        .description {
+          font-size: $font-size-2;
+        }
+  
+        .CTABtn {
+          width: 100px;
+          font-size: $font-size-1;
+        }
+      }
+  
+      .heroRight {
+        .heroImg {
+          max-width: 100%;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+
 }

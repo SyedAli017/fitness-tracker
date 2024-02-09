@@ -1,18 +1,10 @@
 import { Link } from "react-router-dom";
 import FooterInput from "@components/Footer/FooterInput";
 import navLinks from "@data/navLinks";
-import twitterLogo from "@assets/Footer/twitter.svg";
-import facebookLogo from "@assets/Footer/facebook.svg";
-import instagramLogo from "@assets/Footer/instagram.svg";
 import appLogo from "@assets/vite.svg";
 import styles from "@components/Footer/Footer.module.scss";
 
 const Footer = () => {
-  const socialLinks = [
-    { to: "https://twitter.com", logo: twitterLogo },
-    { to: "https://facebook.com", logo: facebookLogo },
-    { to: "https://instagram.com", logo: instagramLogo },
-  ];
 
   return (
     <div className={styles.footer}>
@@ -51,19 +43,6 @@ const Footer = () => {
             <p className={styles.copyright}>
               &copy; 2024 FitTrax. All rights reserved.
             </p>
-          </div>
-          <div className={styles.bottomRight}>
-            <div className={styles.socialIcons}>
-              {socialLinks.map((socialLink) => (
-                <a href={socialLink.to} key={socialLink.to}>
-                  <img
-                    src={socialLink.logo}
-                    className={styles.socialIcon}
-                    alt="logo"
-                  />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
       </div>
