@@ -7,7 +7,17 @@ const PlanBuilder = () => {
   const [selectedExercises, setSelectedExercises] = useState([]);
 
   const handleAddExercise = (activity) => {
-    setSelectedExercises([...selectedExercises, activity]);
+    const isExisting = selectedExercises.some((item) => item.type === activity.type);
+
+    if (!isExisting) {
+      setSelectedExercises([...selectedExercises, activity]);
+    } else {
+      alert("You have already selected this exercise.");
+    }
+  };
+
+  const handleDelete = (activity) => {
+    setSelectedExercises(selectedExercises.filter((item) => item !== activity));
   };
 
   return (
@@ -23,12 +33,17 @@ const PlanBuilder = () => {
           <h3 className={styles.title}>Selected Exercises</h3>
           <div className={styles.selectedPlanList}>
             <div className={styles.selectedExercises}>
-              <SelectedCard data={selectedExercises} />
+              <SelectedCard
+                data={selectedExercises}
+                handleDelete={handleDelete}
+              />
             </div>
-            {selectedExercises && selectedExercises.length === 0 && (
+            {selectedExercises && selectedExercises.length === 0 ? (
               <p className={styles.noExercises}>
                 No exercises selected. Click on exercises to add them
               </p>
+            ) : (
+              <button className={styles.getStarted}>Get Started</button>
             )}
           </div>
         </div>
