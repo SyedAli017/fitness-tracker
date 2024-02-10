@@ -1,0 +1,156 @@
+@import "@styles/_variables.scss";
+
+.authForm {
+  .appName {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .name {
+      font-size: $font-size-7;
+      font-family: $primary-font;
+      color: $white;
+
+      .secondWord {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .forgotPassword {
+    color: $white;
+    font-size: $font-size-1;
+    font-family: $primary-font;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .authBtn {
+    background-color: $primary-color;
+    color: $white;
+    font-size: $font-size-3;
+    font-family: $primary-font;
+    line-height: normal;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      background-color: $background-black;
+      border: 1px solid $primary-color;
+      box-shadow: 0px 0px 10px $primary-color;
+    }
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .or {
+      font-family: $primary-font;
+      font-size: $font-size-1;
+      color: gray;
+    }
+
+    .dividerLine {
+      width: 20%;
+      height: 1px;
+      background-color: gray;
+    }
+  }
+
+  .alt {
+    font-family: $primary-font;
+    font-size: $font-size-1;
+    color: $white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .altBtn {
+      color: $primary-color;
+      font-weight: $semibold-weight;
+
+      &:hover {
+        transition: all 0.3s ease-in-out;
+
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .authOptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    .authOptionBtn {
+      background-color: $white;
+      color: $black;
+      font-size: $font-size-3;
+      font-family: $primary-font;
+      line-height: normal;
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: $background-black;
+        color: $white;
+        border: 1px solid $primary-color;
+        box-shadow: 0px 0px 10px $primary-color;
+      }
+
+      .optionLogo {
+        width: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-md) {
+  .authForm {
+    .appName {
+      .logo {
+        width: 40px;
+        height: 40px;
+      }
+
+      .name {
+        font-size: $font-size-5;
+      }
+    }
+
+    .authBtn {
+      font-size: $font-size-2;
+    }
+
+    .authOptions {
+
+      .authOptionBtn {
+        font-size: $font-size-2;
+
+        .optionLogo {
+          width: 15px;
+        }
+      }
+    }
+  }
+}

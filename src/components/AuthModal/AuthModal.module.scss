@@ -1,0 +1,105 @@
+@import "@styles/_variables.scss";
+
+.authModal {
+  width: 1000px;
+  height: 650px;
+  display: flex;
+  background-color: rgb(236, 231, 221);
+
+  .modalLeft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .leftContent {
+      height: 100%;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+
+      .title {
+        font-size: $font-size-11;
+        font-family: $primary-font;
+        color: $black;
+        line-height: normal;
+
+        .secondWord {
+          color: $primary-color;
+        }
+      }
+      .desc {
+        font-size: $font-size-3;
+        font-family: $primary-font;
+        color: $black;
+        line-height: 170%;
+        text-align: justify;
+      }
+    }
+  }
+
+  .modalRight {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $black;
+
+    .rightContent {
+      animation: slideFromTop 0.7s ease-out;
+      padding: 40px;
+    }
+  }
+
+  @keyframes slideFromTop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .authModal {
+    width: 700px;
+
+    .modalLeft {
+      .leftContent {
+        .title {
+          font-size: $font-size-8;
+        }
+        .desc {
+          font-size: $font-size-2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-md) {
+  .authModal {
+    max-width: 400px;
+
+    .modalLeft {
+      display: none;
+    }
+
+    .modalRight {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-md) {
+  .authModal {
+    width: 100%;
+  }
+}
