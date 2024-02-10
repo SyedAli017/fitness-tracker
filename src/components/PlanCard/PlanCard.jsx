@@ -9,8 +9,6 @@ const PlanCard = () => {
     navigate(`/plan/${slug}`);
   };
 
-  console.log(plans.slug);
-
   return (
     <div className={styles.planCard}>
       {plans.map((plan) => (
@@ -19,7 +17,7 @@ const PlanCard = () => {
             <h3 className={styles.title}>{plan.title}</h3>
             <ul className={styles.exercises}>
               {plan.exercises.map((exercise) => (
-                <li key={exercise.exercise}>
+                <li key={exercise.type}>
                   <div className={styles.exercise}>
                     <h4 className={styles.exerciseName}>{exercise.exercise}</h4>
                     <p className={styles.exerciseType}>{exercise.type}</p>
