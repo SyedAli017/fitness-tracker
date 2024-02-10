@@ -1,0 +1,127 @@
+@import "@styles/_variables.scss";
+
+.planBuilder {
+  max-width: $max-width-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 20px;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .title {
+      font-size: $font-size-11;
+      font-family: $primary-font;
+      color: $white;
+      line-height: normal;
+    }
+
+    .description {
+      font-size: $font-size-5;
+      font-family: $primary-font;
+      color: $white;
+      line-height: 150%;
+    }
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .plan {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .name {
+        font-size: $font-size-7;
+        font-family: $primary-font;
+        color: $primary-color;
+        line-height: normal;
+      }
+
+      .activities {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .activity {
+          outline: 1px solid gray;
+          padding: 20px;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            outline: 1px solid $primary-color;
+            box-shadow: 0px 0px 10px $primary-color;
+            background-color: rgba($primary-color, 0.2);
+          }
+        }
+
+        .type,
+        .calories {
+          font-size: $font-size-3;
+          font-family: $primary-font;
+          color: $white;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-md) {
+  .planBuilder {
+    gap: 30px;
+    margin: 30px auto;
+
+    .header {
+      .title {
+        font-size: $font-size-7;
+      }
+
+      .description {
+        font-size: $font-size-3;
+      }
+    }
+
+    .plans {
+      gap: 30px;
+      .plan {
+        gap: 20px;
+
+        .name {
+          font-size: $font-size-5;
+        }
+
+        .activities {
+          .activity {
+            .type,
+            .calories {
+              font-size: $font-size-2;
+              font-family: $primary-font;
+              color: $white;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-sm) {
+  .planBuilder {
+    .activities {
+      flex-direction: column;
+    }
+  }
+}
