@@ -1,0 +1,231 @@
+@import "@styles/_variables.scss";
+
+.planBuilder {
+  max-width: $max-width-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  margin: 50px auto;
+  padding: 20px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerContent {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 50%;
+      .title {
+        font-size: $font-size-11;
+        font-family: $primary-font;
+        color: $white;
+        line-height: normal;
+      }
+
+      .description {
+        font-size: $font-size-5;
+        font-family: $primary-font;
+        color: $white;
+        line-height: 150%;
+      }
+    }
+
+    .selectedPlans {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      justify-content: center;
+      outline: solid 1px $primary-color;
+      border-radius: 10px;
+      padding: 20px;
+      min-height: 200px;
+
+      .title {
+        font-size: $font-size-7;
+        font-family: $primary-font;
+        color: $primary-color;
+        line-height: normal;
+      }
+
+      .selectedPlanList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        .selectedExercise {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          .name {
+            font-size: $font-size-5;
+            font-family: $primary-font;
+            color: $primary-color;
+            line-height: normal;
+          }
+        }
+
+        .noExercises {
+          color: gray;
+          font-size: $font-size-3;
+          font-family: $primary-font;
+          line-height: normal;
+        }
+
+        .getStarted {
+          width: 180px;
+          height: 40px;
+          background-color: $primary-color;
+          border: none;
+          border-radius: 5px;
+          color: $white;
+          font-family: $primary-font;
+          font-size: $font-size-3;
+          font-weight: $bold-weight;
+          line-height: normal;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: $black;
+            color: $primary-color;
+            box-shadow: 0 0 15px 0 $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .plan {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .name {
+      font-size: $font-size-7;
+      font-family: $primary-font;
+      color: $primary-color;
+      line-height: normal;
+    }
+
+    .activities {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      .activity {
+        outline: 1px solid gray;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          outline: 1px solid $primary-color;
+          box-shadow: 0px 0px 10px $primary-color;
+          background-color: rgba($primary-color, 0.2);
+        }
+      }
+
+      .type,
+      .calories {
+        font-size: $font-size-3;
+        font-family: $primary-font;
+        color: $white;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-md) {
+  .planBuilder {
+    gap: 30px;
+    margin: 30px auto;
+
+    .header {
+      flex-direction: column;
+      gap: 30px;
+
+      .headerContent {
+        width: 100%;
+        .title {
+          font-size: $font-size-8;
+        }
+
+        .description {
+          font-size: $font-size-3;
+        }
+      }
+
+      .selectedPlans {
+        width: 100%;
+
+        .title {
+          font-size: $font-size-4;
+        }
+
+        .selectedPlanList {
+          .selectedExercise {
+            .name {
+              font-size: $font-size-3;
+            }
+          }
+
+          .noExercises {
+            font-size: $font-size-2;
+          }
+
+          .getStarted {
+            width: 150px;
+            font-size: $font-size-2;
+          }
+        }
+      }
+    }
+
+    .plans {
+      gap: 30px;
+      .plan {
+        gap: 20px;
+
+        .name {
+          font-size: $font-size-5;
+        }
+
+        .activities {
+          .activity {
+            .type,
+            .calories {
+              font-size: $font-size-2;
+              font-family: $primary-font;
+              color: $white;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-sm) {
+  .planBuilder {
+    .activities {
+      flex-direction: column;
+    }
+  }
+}

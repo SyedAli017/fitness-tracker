@@ -81,7 +81,7 @@ const plans = [
     exercises: [
       { exercise: "Dancing", type: "Ballet", duration_minutes: 30 },
       { exercise: "Dancing", type: "Hip Hop", duration_minutes: 20 },
-      { exercise: "Dancing", type: "Ballet", duration_minutes: 15 },
+      { exercise: "Dancing", type: "Salsa", duration_minutes: 15 },
     ],
     image: danceImg,
   },
