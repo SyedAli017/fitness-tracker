@@ -38,14 +38,17 @@ const Plan = () => {
 
       return (
         <div key={index} className={styles.exercise}>
-          <h3>{exerciseType}</h3>
-          <p>Type: {exerciseDetails.type}</p>
-          <p>Duration: {duration_minutes} minutes</p>
-          <p>Instructions: {instruction}</p>
-          <p>
-            Calories Burned:{" "}
-            {calculateCalories(calories_per_hour, duration_minutes)} kcal
-          </p>
+          <h3 className={styles.title}>{exerciseType}</h3>
+          <div className={styles.details}>
+            <p className={styles.instruction}>Instructions: {instruction}</p>
+            <p className={styles.duration}>
+              Duration: {duration_minutes} minutes
+            </p>
+            <p className={styles.calories}>
+              Calories Burned:{" "}
+              {calculateCalories(calories_per_hour, duration_minutes)} kcal
+            </p>
+          </div>
         </div>
       );
     });
@@ -58,7 +61,11 @@ const Plan = () => {
 
   return (
     <div className={styles.plan}>
-      <h2>{plan.title}</h2>
+      <div className={styles.titleContainer}>
+        <h2 className={styles.planTitle}>{plan.title}</h2>
+        <button className={styles.selectBtn}>Select Plan</button>
+      </div>
+
       <div className={styles.exerciseContainer}>{renderExerciseDetails()}</div>
     </div>
   );

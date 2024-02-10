@@ -98,13 +98,13 @@ const exercises = [
         type: "Weightlifting, vigorous effort",
         calories_per_hour: 354,
         instruction:
-          "To weightlift with vigorous effort, start with a weight that you can lift for  8 to  12 reps. Choose weights that are challenging but allow you to complete the desired number of repetitions with proper form. Focus on compound exercises that work multiple muscle groups at once, such as squats, deadlifts, and bench presses. Always use proper form to prevent injuries and maximize effectiveness [0](https://www.self.com/story/guide-to-lifting-heavier-weights)[1](https://www.realsimple.com/how-to-lift-weights-6834204).",
+          "To weightlift with vigorous effort, start with a weight that you can lift for  8 to  12 reps. Choose weights that are challenging but allow you to complete the desired number of repetitions with proper form. Focus on compound exercises that work multiple muscle groups at once, such as squats, deadlifts, and bench presses. Always use proper form to prevent injuries and maximize effectiveness.",
       },
       {
         type: "Circuit training, including weights",
         calories_per_hour: 472,
         instruction:
-          "For circuit training including weights, perform a series of exercises in rapid succession without stopping. Each exercise should be performed for a set number of reps, and then move on to the next exercise without resting. Examples of exercises include dumbbell twist lunges, lunges, and marching bridges. Make sure to progressively overload the weights as you get stronger to continue challenging your muscles [2](https://www.verywellfit.com/weights-and-cardio-circuit-training-program-3498511)[3](https://www.verywellfit.com/circuit-training-workout-1230851).",
+          "For circuit training including weights, perform a series of exercises in rapid succession without stopping. Each exercise should be performed for a set number of reps, and then move on to the next exercise without resting. Examples of exercises include dumbbell twist lunges, lunges, and marching bridges. Make sure to progressively overload the weights as you get stronger to continue challenging your muscles ",
       },
       {
         type: "High-intensity interval training (HIIT)",
@@ -121,19 +121,19 @@ const exercises = [
         type: "Zumba",
         calories_per_hour: 472,
         instruction:
-          "To participate in a Zumba class, arrive early to introduce yourself to the instructor and get a feel for the space. Dress in comfortable, non-restrictive clothing that allows for free movement. Follow the instructor's lead and copy the moves, focusing on maintaining a good posture and having fun. Remember to listen to the music and try to match your movements to the beat [0](https://billetto.co.uk/blog/how-to-promote-zumba-class)[1](https://www.activif.com/14-things-to-know-and-expect-for-your-first-zumba-class/).",
+          "To participate in a Zumba class, arrive early to introduce yourself to the instructor and get a feel for the space. Dress in comfortable, non-restrictive clothing that allows for free movement. Follow the instructor's lead and copy the moves, focusing on maintaining a good posture and having fun. Remember to listen to the music and try to match your movements to the beat.",
       },
       {
         type: "Spin class",
         calories_per_hour: 590,
         instruction:
-          "Attending a Spin class involves several steps: arrive early to get a bike setup, wear appropriate clothing such as tank tops, tights, and shorts, and bring a water bottle and towel to stay hydrated and wipe off sweat. Pay attention to the instructor's cues and follow the class structure, which usually includes intervals of intense exercise followed by short rest periods. Be mindful of your form and pedaling technique to avoid injury. If you're new, let the instructor know, and they'll guide you through the process [2](https://gethealthyu.com/beginner-spin-class-tips/)[3](https://indoorcyclingtips.com/spin-class-for-beginners-tips-and-tricks-to-survive/)[4](https://classpass.com/blog/cycling-for-beginners/)[5](https://trustyspotter.com/blog/first-spin-class/)[6](https://www.femmecyclist.com/7-tips-prepare-first-spin-class/)[7](https://draxe.com/fitness/spin-class/).",
+          "Attending a Spin class involves several steps: arrive early to get a bike setup, wear appropriate clothing such as tank tops, tights, and shorts, and bring a water bottle and towel to stay hydrated and wipe off sweat. Pay attention to the instructor's cues and follow the class structure, which usually includes intervals of intense exercise followed by short rest periods. Be mindful of your form and pedaling technique to avoid injury. If you're new, let the instructor know, and they'll guide you through the process.",
       },
       {
         type: "CrossFit",
         calories_per_hour: 708,
         instruction:
-          "Participating in a CrossFit class typically involves a dynamic warm-up, skill/strength work, and a workout of the day (WOD). It's important to arrive early for the introduction class to familiarize yourself with the nine foundational movements of CrossFit and proper form. If you're new to CrossFit, you may be required to complete the On Ramp/Elements course, which teaches you these fundamental movements. During the regular classes, expect a mix of strength and cardio exercises, with a strong emphasis on proper form and scalability based on your skill level. Listen to the instructor's guidance, and remember to push yourself, but also to prioritize safety and listen to your body [0](https://www.nerdfitness.com/blog/a-beginners-guide-to-crossfit/).",
+          "Participating in a CrossFit class typically involves a dynamic warm-up, skill/strength work, and a workout of the day (WOD). It's important to arrive early for the introduction class to familiarize yourself with the nine foundational movements of CrossFit and proper form. If you're new to CrossFit, you may be required to complete the On Ramp/Elements course, which teaches you these fundamental movements. During the regular classes, expect a mix of strength and cardio exercises, with a strong emphasis on proper form and scalability based on your skill level. Listen to the instructor's guidance, and remember to push yourself, but also to prioritize safety and listen to your body.",
       },
     ],
   },
@@ -167,19 +167,19 @@ const exercises = [
         type: "Hatha Yoga",
         calories_per_hour: 236,
         instruction:
-          "Hatha Yoga is a gentle form of yoga that focuses on the basics. Begin with warm-up poses like Cat/Cow and Child’s Pose to prepare your body. Practice poses such as Bridge Pose with modifications if needed, and hold each pose for around  5 breaths. End with meditation to connect with your breath and relax your body [0](https://yogarove.com/beginner-hatha-yoga-poses/)[1](https://www.theyoganomads.com/what-is-hatha-yoga-a-complete-guide/).",
+          "Hatha Yoga is a gentle form of yoga that focuses on the basics. Begin with warm-up poses like Cat/Cow and Child’s Pose to prepare your body. Practice poses such as Bridge Pose with modifications if needed, and hold each pose for around  5 breaths. End with meditation to connect with your breath and relax your body.",
       },
       {
         type: "Vinyasa Yoga",
         calories_per_hour: 354,
         instruction:
-          "Vinyasa Yoga is a dynamic style of yoga that flows from one pose to the next. Start with a plank position and lengthen forward through the crown of your head and out through your heels. Progress through a sequence of poses, connecting the movements with your breath. Warm up with poses like Neck Stretches, Gentle Twist, and Child’s Pose. Study the sequencing of Vinyasa yoga poses to enhance your practice, and consider online resources and short courses to learn the structure [2](https://www.verywellfit.com/introduction-to-vinyasa-flow-yoga-4143120)[3](https://www.theyoganomads.com/vinyasa-yoga-poses/).",
+          "Vinyasa Yoga is a dynamic style of yoga that flows from one pose to the next. Start with a plank position and lengthen forward through the crown of your head and out through your heels. Progress through a sequence of poses, connecting the movements with your breath. Warm up with poses like Neck Stretches, Gentle Twist, and Child’s Pose. Study the sequencing of Vinyasa yoga poses to enhance your practice, and consider online resources and short courses to learn the structure.",
       },
       {
         type: "Power Yoga",
         calories_per_hour: 472,
         instruction:
-          "Power Yoga is a vibrant and dynamic style of yoga that combines strength, flexibility, and breath control. Start with a warm-up, such as Cat-Cow with blocks, to prepare your body. Transition into poses like Low Lunge with blocks, Plank Pose variation with blocks, Extended Side Angle, Revolved Triangle, and Standing Splits. Follow these with Camel Pose and Head-to-Knee Pose for a cool down. Throughout your practice, maintain a strong connection with your breath and focus on the alignment of your body. Consider incorporating props like blocks to assist with certain poses and to challenge your balance and stability [0](https://www.yogajournal.com/practice/20-minute-power-yoga-blocks/)[1](https://bulldogonline.com/guides/power-yoga-flow/)[2](https://greatist.com/fitness/what-is-power-yoga).",
+          "Power Yoga is a vibrant and dynamic style of yoga that combines strength, flexibility, and breath control. Start with a warm-up, such as Cat-Cow with blocks, to prepare your body. Transition into poses like Low Lunge with blocks, Plank Pose variation with blocks, Extended Side Angle, Revolved Triangle, and Standing Splits. Follow these with Camel Pose and Head-to-Knee Pose for a cool down. Throughout your practice, maintain a strong connection with your breath and focus on the alignment of your body. Consider incorporating props like blocks to assist with certain poses and to challenge your balance and stability.",
       },
     ],
   },
@@ -190,13 +190,13 @@ const exercises = [
         type: "Mat Pilates",
         calories_per_hour: 236,
         instruction:
-          "Mat Pilates begins with a focus on form, breathwork, and controlled purposeful movement. Begin slowly and steadily, focusing on engaging your deep core muscles. Use your breath, especially the exhale, to deepen core activation. Work in all body position variations: standing, seated, on all fours, lying on your back, and lying on your front. Be patient and persistent as you teach your body a new way of movement. Take at least two sessions per week initially, increasing frequency as you progress [0](https://www.realsimple.com/mat-pilates-exercises-for-beginners-8409221)[1](https://www.pilatesanytime.com/mx/pilates-beginners-mat).",
+          "Mat Pilates begins with a focus on form, breathwork, and controlled purposeful movement. Begin slowly and steadily, focusing on engaging your deep core muscles. Use your breath, especially the exhale, to deepen core activation. Work in all body position variations: standing, seated, on all fours, lying on your back, and lying on your front. Be patient and persistent as you teach your body a new way of movement. Take at least two sessions per week initially, increasing frequency as you progress.",
       },
       {
         type: "Reformer Pilates",
         calories_per_hour: 354,
         instruction:
-          "Reformer Pilates involves footwork in a neutral spine with engaged abs. For exercises like Pilates V, the lift of the heels helps engage the inner thigh and pelvic floor. Practice exercises like Leg Circles and Running on the Reformer, making sure to go for length and engage the entire leg, not just the quads. Pay attention to the articulation of your feet, emphasizing the lift of the heel and the energy from the back of the leg [2](https://www.verywellfit.com/pilates-reformer-workout-beginner-pilates-exercises-2704604)[3](https://www.verywellfit.com/the-amazing-pilates-reformer-2704339).",
+          "Reformer Pilates involves footwork in a neutral spine with engaged abs. For exercises like Pilates V, the lift of the heels helps engage the inner thigh and pelvic floor. Practice exercises like Leg Circles and Running on the Reformer, making sure to go for length and engage the entire leg, not just the quads. Pay attention to the articulation of your feet, emphasizing the lift of the heel and the energy from the back of the leg.",
       },
       {
         type: "Barre Pilates",
