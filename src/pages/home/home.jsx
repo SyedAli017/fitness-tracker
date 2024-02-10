@@ -1,10 +1,11 @@
 import Hero from "@components/Hero/Hero";
-import styles from "@pages/home/home.module.scss";
+import Features from "@components/Features/Features";
 
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <div>
       <Hero />
+      <Features />
     </div>
   );
 };
