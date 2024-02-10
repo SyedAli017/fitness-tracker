@@ -34,19 +34,33 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={styles.hamburgerMenu} onClick={toggleMobileMenu}>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
+          {!isMobileMenuclicked && (
+            <div className={styles.menuOpen}>
+              <div className={styles.line}></div>
+              <div className={styles.line}></div>
+              <div className={styles.line}></div>
+            </div>
+          )}
+          {isMobileMenuclicked && (
+            <div className={styles.menuClose}>
+              <div className={styles.line}></div>
+              <div className={styles.line}></div>
+            </div>
+          )}
         </div>
         {isMobileMenuclicked && (
           <div className={styles.mobileMenu} onClick={toggleMobileMenu}>
             <NavMenu />
             <div className={styles.mobileMenuBtns}>
               <Link className={styles.navbarLink} to="/login">
-                <button className={styles.loginBtn} onClick={toggleMobileMenu}>Login</button>
+                <button className={styles.loginBtn} onClick={toggleMobileMenu}>
+                  Login
+                </button>
               </Link>
               <Link className={styles.navbarLink} to="/signup">
-                <button className={styles.signupBtn} onClick={toggleMobileMenu}>Signup</button>
+                <button className={styles.signupBtn} onClick={toggleMobileMenu}>
+                  Signup
+                </button>
               </Link>
             </div>
           </div>

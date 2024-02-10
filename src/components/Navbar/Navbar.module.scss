@@ -109,24 +109,44 @@
       }
       .hamburgerMenu {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
         cursor: pointer;
 
-        .line {
-          width: 35px;
-          height: 3px;
-          background-color: $white;
-          transition: all 0.3s ease-in-out;
+        .menuOpen {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
 
-          &:nth-child(odd) {
-            width: 25px;
+          .line {
+            width: 35px;
+            height: 3px;
+            background-color: $white;
+            transition: all 0.3s ease-in-out;
+
+            &:nth-child(odd) {
+              width: 25px;
+            }
+          }
+          &:hover :nth-child(odd) {
+            width: 35px;
           }
         }
-        &:hover :nth-child(odd) {
-          width: 35px;
+
+        .menuClose {
+          .line {
+            width: 35px;
+            height: 3px;
+            background-color: $white;
+
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(0px, 0px);
+            }
+
+            &:nth-child(2) {
+              transform: rotate(-45deg) translate(2px, -2px);
+            }
+          }
         }
       }
 
@@ -142,6 +162,7 @@
         top: 80px;
         animation: slideFromTop 0.9s ease-in-out;
         z-index: 999;
+        outline: solid blue 2px;
 
         .mobileMenuBtns {
           display: flex;
