@@ -50,19 +50,23 @@ const Navbar = () => {
         </div>
         <div className={styles.navbarRight}>
           <div className={styles.navbarLink}>
-            <button className={styles.loginBtn} onClick={handleLogin}>Login</button>
+            <button className={styles.loginBtn} onClick={handleLogin}>
+              Login
+            </button>
           </div>
           <div className={styles.navbarLink}>
-            <button className={styles.signupBtn} onClick={handleSignup}>Signup</button>
+            <button className={styles.signupBtn} onClick={handleSignup}>
+              Signup
+            </button>
           </div>
           <Modal
-          open={isModalOpen}
-          onCancel={handleCancel}
-          footer={null}
-          closable={false}
-        >
-          <AuthModal isLogin={isLogin} setIsLogin={setIsLogin} />
-        </Modal>
+            open={isModalOpen}
+            onCancel={handleCancel}
+            footer={null}
+            closable={false}
+          >
+            <AuthModal isLogin={isLogin} setIsLogin={setIsLogin} />
+          </Modal>
         </div>
         <div className={styles.hamburgerMenu} onClick={toggleMobileMenu}>
           {!isMobileMenuclicked && (
@@ -83,16 +87,28 @@ const Navbar = () => {
           <div className={styles.mobileMenu} onClick={toggleMobileMenu}>
             <NavMenu />
             <div className={styles.mobileMenuBtns}>
-              <Link className={styles.navbarLink} to="/login">
-                <button className={styles.loginBtn} onClick={toggleMobileMenu}>
+              <div className={styles.navbarLink}>
+                <button
+                  className={styles.loginBtn}
+                  onClick={() => {
+                    toggleMobileMenu();
+                    handleLogin();
+                  }}
+                >
                   Login
                 </button>
-              </Link>
-              <Link className={styles.navbarLink} to="/signup">
-                <button className={styles.signupBtn} onClick={toggleMobileMenu}>
+              </div>
+              <div className={styles.navbarLink}>
+                <button
+                  className={styles.signupBtn}
+                  onClick={() => {
+                    toggleMobileMenu();
+                    handleSignup();
+                  }}
+                >
                   Signup
                 </button>
-              </Link>
+              </div>
             </div>
           </div>
         )}

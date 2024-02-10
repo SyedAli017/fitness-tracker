@@ -66,3 +66,40 @@
     }
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .authModal {
+    width: 700px;
+
+    .modalLeft {
+      .leftContent {
+        .title {
+          font-size: $font-size-8;
+        }
+        .desc {
+          font-size: $font-size-2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-md) {
+  .authModal {
+    max-width: 400px;
+
+    .modalLeft {
+      display: none;
+    }
+
+    .modalRight {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile-md) {
+  .authModal {
+    width: 100%;
+  }
+}
