@@ -1,0 +1,16 @@
+@import "@styles/variables.scss";
+
+
+.ant-modal {
+    width: fit-content !important;
+    top: 20px;
+  }
+  
+.ant-modal-content {
+    padding: 0px !important;
+  }
+  
+  .ant-modal-wrap {
+    backdrop-filter: blur(10px);
+  }
+  
