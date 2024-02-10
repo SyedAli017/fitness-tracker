@@ -39,10 +39,41 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 30px;
       justify-content: center;
       outline: solid 1px $primary-color;
       border-radius: 10px;
+      padding: 20px;
       min-height: 200px;
+
+      .title {
+        font-size: $font-size-7;
+        font-family: $primary-font;
+        color: $primary-color;
+        line-height: normal;
+      }
+
+      .selectedPlanList {
+
+        .selectedExercise {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          .name {
+            font-size: $font-size-5;
+            font-family: $primary-font;
+            color: $primary-color;
+            line-height: normal;
+          }
+        }
+
+        .noExercises {
+            color: gray;
+            font-size: $font-size-3;
+            font-family: $primary-font;
+            line-height: normal;
+        }
+      }
     }
   }
 

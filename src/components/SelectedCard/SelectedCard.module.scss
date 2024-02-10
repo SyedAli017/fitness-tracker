@@ -1,0 +1,24 @@
+@import "@styles/_variables.scss";
+
+.selectedCard {
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .type {
+      font-size: $font-size-4;
+      font-family: $primary-font;
+      color: $white;
+      line-height: normal;
+    }
+
+    .calories {
+      font-size: $font-size-3;
+      font-family: $primary-font;
+      color: $white;
+      line-height: normal;
+    }
+  }
+}
